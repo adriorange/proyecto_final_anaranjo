@@ -1,0 +1,48 @@
+footer{	
+    width: 100%;
+    height: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.redes{	
+    display: inline-block;    
+}
+
+.bi-linkedin{	
+    font-size: 40px;
+    text-align: center;
+    margin-left: 8PX;
+    margin-right: 8PX;
+    color: rgb(247, 239, 221);
+    &:hover {	
+        color: #528e86;
+        box-shadow: #252827;
+    }
+}
+
+.bi-twitter{	
+    font-size: 40px;
+    text-align: center;
+    margin-left: 8PX;
+    margin-right: 8PX;
+    color: rgb(247, 239, 221);
+    &:hover {	
+        color: #528e86;
+        box-shadow: #252827;
+    }
+}
+
+.bi-instagram{	
+    font-size: 40px;
+    text-align: center;
+    margin-left: 8PX;
+    margin-right: 8PX;
+    color: rgb(247, 239, 221);
+    &:hover {	
+        color: #528e86;
+        box-shadow: #252827;
+    }
+}
