@@ -18,8 +18,7 @@ footer {
   margin-right: 8PX;
   color: #f7efdd; }
   .bi-linkedin:hover {
-    color: #528e86;
-    box-shadow: #252827; }
+    color: #082c27; }
 
 .bi-twitter {
   font-size: 40px;
@@ -28,8 +27,7 @@ footer {
   margin-right: 8PX;
   color: #f7efdd; }
   .bi-twitter:hover {
-    color: #528e86;
-    box-shadow: #252827; }
+    color: #082c27; }
 
 .bi-instagram {
   font-size: 40px;
@@ -38,14 +36,16 @@ footer {
   margin-right: 8PX;
   color: #f7efdd; }
   .bi-instagram:hover {
-    color: #528e86;
-    box-shadow: #252827; }
+    color: #082c27; }
 
 * {
   font-family: 'Montserrat', sans-serif; }
 
 /* CLASES*/
 /* Nav */
+body {
+  background-size: cover; }
+
 .body-bg {
   background-image: url(../img/background_squares.jpg);
   background-attachment: fixed;
@@ -104,7 +104,7 @@ footer {
   font-weight: 600; }
 
 .text-quote {
-  color: #000000;
+  color: #252827;
   font-family: 'Philosopher';
   font-size: 3rem;
   font-style: italic; }
@@ -159,9 +159,16 @@ footer {
     font-size: 600;
     transform: scale(1.05); }
 
-btn-aqua:active {
+.btn-aqua:active {
   animation: gradient 3s infinite;
   transform: scale(0.8); }
+
+.container-error {
+  text-align: center; }
+
+.btn-error {
+  width: 40%;
+  margin: auto; }
 
 @keyframes gradient {
   0% {
@@ -171,19 +178,6 @@ btn-aqua:active {
   100% {
     background-position: 0% 50%; } }
 
-/*
-.btn-aqua{	
-    color: #ffffff;
-    background-color: #6fbdb0;
-}
-
-.btn-aqua:hover{	
-    color: #ffffff;
-    background-color: #528e86;
-    font-weight: 400;
-    transform: scale(1.1);
-    transition: all 1.5s;
-}*/
 .img-circle {
   width: 70%;
   border-radius: 1rem;
@@ -194,21 +188,20 @@ btn-aqua:active {
   -webkit-backdrop-filter: blur(4.5px);
   border: 1px solid rgba(255, 255, 255, 0.18); }
   .img-circle:hover {
-    width: 80%;
-    transition: all 1.5s; }
+    width: 65%;
+    transition: all 1.2s; }
 
 .img-animation {
   animation-delay: 2s; }
 
-/* FOOTER*/
-/*GRIDS servicios.html*/
+/* GRIDS servicios.html */
 .container {
   width: 100%;
   margin: 10px auto;
   padding: 10px;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat 3, 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat 2, 1fr;
   grid-template-areas: "tall charlas invest" "frase-1 frase-1 frase-2"; }
 
@@ -222,14 +215,6 @@ btn-aqua:active {
   color: #000000;
   border-radius: 4px; }
 
-/*
-.container .sidebar {
-    background-color: #528e86;
-    color: #fff;
-    font-size: 1.5rem;
-    border-radius: 4px;
-    text-align: left;
-} */
 .container .frase-1,
 .container .frase-2 {
   background-color: #6fbdb0;
@@ -249,18 +234,6 @@ btn-aqua:active {
   grid-area: invest;
   grid-column: 3 / 4; }
 
-/*
-.sidebar {
-    grid-area: sidebar;
-    grid-column: 4 / 5;
-    grid-row: 1 / 3;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 20px;
-} */
 .frase-1 {
   grid-area: frase-1;
   grid-column: 1 / 3;
@@ -279,13 +252,23 @@ btn-aqua:active {
   text-align: left;
   font-style: italic; }
 
-/* MEDIA QUERIES*/
+/* Media queries */
 @media (max-width: 480px) {
   .container {
-    grid-template-areas: "tall" "charlas" "invest" "frase-1" "frase-2"; } }
+    display: block; }
+  .container > div {
+    margin-bottom: 10px; } }
 
 @media (max-width: 768px) {
   .container {
     grid-template-areas: "tall charlas invest" "frase-1 frase-1 frase-2"; } }
 
-/* {} */
+/* Important */
+.navbar-toggler-icon {
+  background-image: url(../img/menu.png) !important;
+  width: 1.8rem !important;
+  height: 1.8rem !important; }
+
+img {
+  min-width: 6rem;
+  min-height: 6rem; }

@@ -9,6 +9,11 @@
 /* CLASES*/
 
 /* Nav */
+
+body {
+    background-size: cover;
+}
+
 .body-bg{
     background-image: url(../img/background_squares.jpg);
     background-attachment: fixed;
@@ -32,7 +37,7 @@
     color: $white;
     font-size: 1.7rem;
     &:hover{	
-        color: rgb(247, 239, 221);
+        color: $tertiaryColor;
         font-weight: 400;
         transform: scale(1.1);
         text-decoration: underline;
@@ -80,7 +85,7 @@
 }
 
 .text-quote{	
-    color: $black;
+    color: $grey1;
     font-family: 'Philosopher';
     font-size: 3rem;
     font-style: italic;
@@ -113,7 +118,7 @@
 }
 
 .margin-left {	
-    margin-left: 2rem;;
+    margin-left: 2rem;
 }
 
 /* Cards y formularios */
@@ -146,38 +151,33 @@
     }
 }
 
-btn-aqua:active {
+.btn-aqua:active {
     animation: gradient 3s infinite;
     transform: scale(0.8);
 }
 
+.container-error{
+    text-align: center;
+}
+
+.btn-error{
+    width: 40%;
+    margin: auto;
+}
+
 @keyframes gradient {
 0% {
- background-position: 0% 50%;
+    background-position: 0% 50%;
 }
 
 50% {
- background-position: 100% 50%;
+    background-position: 100% 50%;
 }
 
 100% {
- background-position: 0% 50%;
+    background-position: 0% 50%;
 }
 }
-
-/*
-.btn-aqua{	
-    color: #ffffff;
-    background-color: #6fbdb0;
-}
-
-.btn-aqua:hover{	
-    color: #ffffff;
-    background-color: #528e86;
-    font-weight: 400;
-    transform: scale(1.1);
-    transition: all 1.5s;
-}*/
 
 .img-circle{
     width: 70%;
@@ -189,8 +189,8 @@ btn-aqua:active {
     -webkit-backdrop-filter: blur( 4.5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     &:hover{	
-        width: 80%;
-        transition: all 1.5s;
+        width: 65%;
+        transition: all 1.2s;
     }
 }
 
@@ -198,10 +198,7 @@ btn-aqua:active {
     animation-delay: 2s;
 }
 
-
-/* FOOTER*/
-
-/*GRIDS servicios.html*/
+/* GRIDS servicios.html */
 
 .container {    
     width: 100%;
@@ -209,7 +206,7 @@ btn-aqua:active {
     padding: 10px;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat (3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat (2, 1fr);
     grid-template-areas: "tall charlas invest"
                         "frase-1 frase-1 frase-2";
@@ -225,15 +222,6 @@ btn-aqua:active {
     color: $black;
     border-radius: 4px;
 }
-
-/*
-.container .sidebar {
-    background-color: #528e86;
-    color: #fff;
-    font-size: 1.5rem;
-    border-radius: 4px;
-    text-align: left;
-} */
 
 .container .frase-1,
 .container .frase-2 {
@@ -257,18 +245,6 @@ btn-aqua:active {
     grid-area: invest;
     grid-column: 3 / 4;
 }
- /*
-.sidebar {
-    grid-area: sidebar;
-    grid-column: 4 / 5;
-    grid-row: 1 / 3;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 20px;
-} */
 
 .frase-1 {
     grid-area: frase-1;
@@ -290,15 +266,14 @@ btn-aqua:active {
     font-style: italic;
 }
 
-/* MEDIA QUERIES*/
+/* Media queries */
 
 @media (max-width:480px){
     .container {
-        grid-template-areas: "tall"
-                            "charlas"
-                            "invest"
-                            "frase-1"
-                            "frase-2";
+        display: block;
+    }
+    .container > div{
+        margin-bottom: 10px;
     }
 }
 
@@ -309,8 +284,14 @@ btn-aqua:active {
     }
 }
 
+/* Important */
 
-
-
-
-/* {} */
+.navbar-toggler-icon {
+    background-image: url(../img/menu.png) !important;
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+}
+img{
+    min-width: 6rem;
+    min-height: 6rem;
+}
