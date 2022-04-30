@@ -35,7 +35,7 @@ body {
 
 .text-white{	
     color: $white;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     &:hover{	
         color: $tertiaryColor;
         font-weight: 400;
@@ -52,14 +52,14 @@ body {
 
 .text-titulos{	
     color: $mainColor;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: center;
     text-transform: uppercase;
 }
 
 .text-subt{	
     color: $mainColor;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .text-med{	
@@ -69,7 +69,7 @@ body {
 
 .text-parr{	
     color: $grey1;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .text-plain{	
@@ -93,7 +93,7 @@ body {
 
 .text-btn{	
     color: $white;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 .text-bold{	

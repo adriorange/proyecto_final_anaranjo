@@ -63,7 +63,7 @@ body {
 
 .text-white {
   color: #ffffff;
-  font-size: 1.7rem; }
+  font-size: 1.6rem; }
   .text-white:hover {
     color: #f7efdd;
     font-weight: 400;
@@ -77,13 +77,13 @@ body {
 
 .text-titulos {
   color: #6fbdb0;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
   text-transform: uppercase; }
 
 .text-subt {
   color: #6fbdb0;
-  font-size: 2rem; }
+  font-size: 1.7rem; }
 
 .text-med {
   color: #7c8180;
@@ -91,7 +91,7 @@ body {
 
 .text-parr {
   color: #252827;
-  font-size: 1.4rem; }
+  font-size: 1.3rem; }
 
 .text-plain {
   color: #252827;
@@ -111,7 +111,7 @@ body {
 
 .text-btn {
   color: #ffffff;
-  font-size: 1.25rem; }
+  font-size: 1.2rem; }
 
 .text-bold {
   font-size: 1.25rem;
